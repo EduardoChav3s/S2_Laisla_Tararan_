@@ -11,7 +11,11 @@ livros = []
 def cadastrar_livro():
     titulo = input("Digite o título do livro: ")
     autor = input("Digite o autor do livro: ")
+<<<<<<< HEAD
     ano = input("Digite o ano de publicação do livro: ")
+=======
+    idade = input ("Digite a idade do autor:")
+>>>>>>> origin/incluir2
 
     # Adiciona o livro na lista
     livros.append({"titulo": titulo, "autor": autor, "ano": ano})
@@ -20,7 +24,11 @@ def cadastrar_livro():
 # Função para listar os livros cadastrados
 def listar_livros():
     if len(livros) == 0:
+<<<<<<< HEAD
         print("Não há livros cadastrados.\n")
+=======
+        print ("O livro Harry Potter foi CLONADO. ")
+>>>>>>> origin/incluir2
     else:
         print("Livros cadastrados:")
         for livro in livros:
@@ -31,8 +39,13 @@ def listar_livros():
 while True:
     print("Sistema de Gestão de Livros")
     print("1 - Cadastrar Livro")
+<<<<<<< HEAD
     print("2 - Listar Livros")
     print("3 - Sair")
+=======
+    print ("2 - Comprar Livro")
+    print ("3 - Doar Livro.")
+>>>>>>> origin/incluir2
     
     opcao = input("Escolha uma opção (1, 2 ou 3): ")
     
@@ -43,5 +56,9 @@ while True:
     elif opcao == "3":
         print("Saindo do sistema... Até logo!")
         break
+<<<<<<< HEAD
     else:
+=======
+    elif:
+>>>>>>> origin/incluir2
         print("Opção inválida. Tente novamente.\n")
